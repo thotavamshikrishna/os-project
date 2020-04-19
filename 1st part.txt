@@ -1,0 +1,59 @@
+#include<stdio.h>
+
+#include<unistd.h>
+
+#include<stdlib.h>
+
+struct process{
+
+char process_id[20];
+
+int arrival_time;
+
+int burst_time;
+
+int completion_time;
+
+int remain_burst;
+
+}a[100], b[100], c[100];
+
+
+
+
+int n, x=0, y=0, z=0;                                                            //global variables
+
+int time_quant;
+
+
+void INPUT(){
+
+int p,  i, t;
+
+printf("NUMBER OF QUERIES ? : "); scanf("%d", &n);
+
+if(n==0) { printf("\n NO QUERY\n"); }
+
+else{
+
+printf("\nENTER TIME QUANTUM FOR EACH (in minutes): "); scanf("%d", &time_quant);
+
+printf("\nVALUES:\n1: FACULTY\n2: STUDENT\n");
+
+for(i=0; i<n; i++){
+
+printf("\nENTER VALUE FOR PROCESS: "); scanf("%d", &p);
+
+if(p==1){
+
+printf("QUERY NAME: "); scanf("%s", &a[x].process_id);
+
+printf("ARRIVAL TIME(in 24 hour format): "); scanf("%d", &t);
+
+if(t<1000 || t>1200){
+
+printf("\n SORRY SUDESH SHARMA IS BUSY AT THIS TIME\n");
+
+return 0;
+
+}

@@ -1,0 +1,86 @@
+#include<stdio.h>
+
+#include<unistd.h>
+
+#include<stdlib.h>
+
+else;
+
+}
+
+if(z != (x+y)){
+
+if(x!=n){
+
+while(n!=x){
+
+c[z]= a[n];
+
+z++;
+
+n++;
+
+}
+
+}
+
+else if(y!=m){
+
+while(m!=y){
+
+c[z]= b[m];
+
+z++;
+
+m++;
+
+}
+
+}
+
+}
+
+}
+
+else if(x==0){
+
+while(m!=y){
+
+c[z]= b[m];
+
+z++;
+
+m++;
+
+}
+
+}
+
+else if(y==0){
+
+while(n!=x){
+
+c[z]= a[n];
+
+z++;
+
+n++;
+
+}
+
+}
+
+else {
+
+printf("\n NO VALID PROCESSES AVAILABLE\n");
+
+}
+
+}
+
+
+void OUTPUT(){
+
+int i=0, total=0, sum=0;
+
+float avg;

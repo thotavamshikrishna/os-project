@@ -1,0 +1,143 @@
+#include<stdio.h>
+
+#include<unistd.h>
+
+#include<stdlib.h>
+else{a[x].arrival_time= t-1000;}
+
+printf("RESOLVING TIME(in minutes): ");
+
+scanf("%d", &a[x].burst_time);
+
+a[x].remain_burst= a[x].burst_time;
+
+x++;
+
+} else{
+
+printf("QUERY NAME: "); scanf("%s", &b[y].process_id);
+
+printf("ARRIVAL TIME(in 24 hour format): "); scanf("%d", &t);
+
+if(t<1000 || t>1200){
+
+printf("\nSORRY SUDESH SHARMA IS BUSY AT THIS TIME\n");
+
+return 0;
+
+}
+
+else {b[y].arrival_time= t-1000; }
+
+printf("RESOLVING TIME(in minutes): ");
+
+scanf("%d", &b[y].burst_time);
+
+b[y].remain_burst= b[y].burst_time;
+
+y++;
+
+}
+
+}
+
+}
+
+}
+
+
+void RR(){;
+
+int time= c[0].arrival_time;
+
+int mark=0, count=0, i, rc;
+
+while(time!=120 && count!=z){                                                    //timeout after 2 hours = 120 minutes
+
+for(i=0; i<=mark;i++){
+
+if(c[i].remain_burst > time_quant){
+
+time += time_quant;
+
+c[i].remain_burst -= time_quant;
+
+}
+
+else if(c[i].remain_burst <=time_quant && c[i].remain_burst !=0){
+
+time += c[i].remain_burst;
+
+c[i].remain_burst =0;
+
+c[i].completion_time = time;
+
+count++;
+
+}
+
+else;
+
+}
+
+int start = mark+1;
+
+for(rc= start; rc<z; rc++){
+
+if(c[rc].arrival_time <= time){
+
+mark++;
+
+}
+
+}
+
+}
+
+}
+
+
+
+void JOIN(){
+
+int m=0, n= 0, min, flag;                                          //counter variables
+
+if( x!=0  && y!=0){                                                //priorities are decided
+
+while(m<y && n<x){
+
+if(a[n].arrival_time == b[m].arrival_time){
+
+c[z] = a[n];
+
+z++;
+
+n++;
+
+c[z]= b[m];
+
+z++;
+
+m++;
+
+}
+
+else if(a[n].arrival_time < b[m].arrival_time){
+
+c[z]= a[n];
+
+z++;
+
+n++;
+
+}
+
+else if(a[n].arrival_time > b[m].arrival_time){
+
+c[z]= b[m];
+
+z++;
+
+m++;
+
+}

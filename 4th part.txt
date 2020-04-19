@@ -1,0 +1,77 @@
+#include<stdio.h>
+
+#include<unistd.h>
+
+#include<stdlib.h>
+
+printf("\nEXECUTION TABLE(in 24 hour format)\n");
+
+printf("\nQUERY NAME\tARRIVAL TIME\tRESOLVING TIME\tCOMPLETION TIME\tTURN-AROUND TIME\tWAITING TIME");
+
+for(i; i<z; i++){
+
+printf("\n%s\t\t%d\t\t%d\t\t%d\t\t%d\t\t\t%d",
+
+c[i].process_id, (c[i].arrival_time+1000), c[i].burst_time, (c[i].completion_time+1000), (c[i].completion_time-c[i].arrival_time), ((c[i].completion_time-c[i].arrival_time)- c[i].burst_time));
+
+total= c[i].completion_time;
+
+sum+= (c[i].completion_time-c[i].arrival_time);
+
+}
+
+avg = sum/z;
+
+printf("\n\nTOTAL TIME SPENT: %d", total);
+
+printf("\nAVG QUERY TIME: %f", avg);
+
+printf("\nFINISHED");
+
+}
+
+
+void FINAL(){
+
+printf("Sudesh Sharma is a Linux expert who wants to have an online system where he can handle student queries. Since there can be multiple"
+
+" requests at any time he wishes to dedicate a fixed amount of time to every request so that everyone gets a fair share of his time."
+
+" He will log into the system from 10am to 12am only.  He wants to have separate requests queues for students and faculty."
+
+" Implement a strategy for the same. The summary at the end of the session should include the total time he spent on handling queries"
+
+" and average query time.\n"
+
+);
+
+printf("\nASSUMPTIONS:\n"
+
+"\n>>>>ENTER ARRIVAL TIME AS IN 24 HOUR FORMAT\n"
+
+"\n>>>>ENTER YOUR QUERIES IN AN ASCENDING ORDER\n"
+
+"\n>>>>TIME UNIT : MINUTES\n"
+
+"\n>>>>ENTER TIME ONLY BETWEEN 10AM TO 12AM i.e. 1000 TO 1200\n"
+
+);
+
+printf("\nSOLUTION IS AS FOLLOWS :==> \n\n");
+
+}
+
+
+main(){
+
+FINAL();
+
+INPUT();
+
+JOIN();
+
+RR();
+
+OUTPUT();
+
+}
